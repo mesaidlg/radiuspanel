@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="/">
+		<img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> RadiusPanel
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item <?php if( $navigasi == 'home') { echo "active"; } ?>">
+				<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item <?php if( $navigasi == 'user') { echo "active"; } ?>">
+				<a class="nav-link" href="add-user.php">Tambah User</a>
+			</li>
+			<li class="nav-item <?php if( $navigasi == 'import') { echo "active"; } ?>">
+				<a class="nav-link" href="import.php">Import User</a>
+			</li>
+			<li class="nav-item <?php if( $navigasi == 'online') { echo "active"; } ?>">
+				<a class="nav-link" href="online.php">Online User</a>
+			</li>
+			<li class="nav-item <?php if( $navigasi == 'logs') { echo "active"; } ?>">
+				<a class="nav-link" href="logs.php">Akses log</a>
+			</li>
+		</ul>
+	</div>
+</nav>
